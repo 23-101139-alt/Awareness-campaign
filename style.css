@@ -9,5 +9,204 @@
 
 :root{
   --background: #8ECAE6;
+  --white:#FFF;
+  --textcolor:#023047;
+  --cta:#FB8500;
+  --cta-hover:#FF4D00;
+  --red:#ff0000;
 }
 
+
+
+
+.sec-login{    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 0 8%;
+    min-width: 1080px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--background);
+       background-image: url(pic/pic2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+.containerr-sec-login{
+        max-width: 1280px;
+    width: 100%;
+    display: flex;align-items: center;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+
+
+
+.container-login-page{
+        display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content-info-login-page{display: flex;
+    flex-direction: column;
+    gap: 56px;
+    border-radius: 15px;
+margin: 0;
+padding: 74px 51px;
+box-sizing: border-box;
+background-color: var(--white);
+width: 620px;}
+
+.header-log-in-page{color:var(--textcolor);
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-weight: 800;margin: 0;
+line-height: 140%;}
+
+.form{margin: 0;padding: 0;display: flex;
+    flex-direction: column;
+gap: 30px;}
+
+.input1{display: flex;flex-direction: column;
+    gap: 22px;margin: 0;
+    padding: 0;border-color: transparent;}
+
+.placeholder-login{color: var(--textcolor);
+font-family: Poppins;
+font-size: 24px;margin: 0;padding: 0;
+font-weight: 600;}
+
+
+.text-info-login {
+height: 47px;
+border-radius: 5px;color: var(--textcolor);
+    display: flex;background-color: transparent
+;border: 2px solid var(--textcolor);
+padding-left: 26.92px;box-sizing: border-box;
+
+}
+.text-info-login:focus,
+.text-info-login:active,
+.text-info-login:visited,
+.text-info-login:focus-visible,
+.text-info-login:focus-within,
+.text-info-login:hover {
+  color: var(--textcolor) !important;
+  border: 2.019px solid var(--textcolor);
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.input-group{display: flex;flex-direction: column;gap: 30px;
+    margin: 0;padding: 0;border-color: transparent;
+}
+
+.group-input2{display: flex;flex-direction: column;gap: 12px;
+    margin: 0;padding: 0;border-color: transparent;
+}
+
+.forgot-pass{color: var(--textcolor);
+text-align: right;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: 5.5%; /* 0.88px */
+text-underline-offset: 12.5%; /* 2px */
+text-underline-position: from-font;
+
+}
+
+.link{text-decoration: none;}
+
+.input3{display: flex;flex-direction: row;gap: 9px;margin: 0;
+    padding: 0;border-color: transparent;}
+
+.checkbox {
+  width: 25.473px;
+  height: 25.473px;
+  background: transparent; 
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid var(--textcolor);
+  cursor: pointer;margin: 0;
+  position: relative;    flex-shrink: 0;
+    display: inline-block;
+}
+
+
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+      left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--textcolor);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.rember-text{color: var(--textcolor);
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;margin: 0;padding: 0;}
+
+.buttonn{display: flex;
+height: 50px;width: 100%;
+;box-sizing: border-box;
+justify-content: center;cursor: pointer;
+align-items: center;border-color: transparent;
+align-self: stretch;
+border-radius: 15px;   ;
+background: var(--cta);
+transition: all 300ms linear;}
+
+.buttonn:hover{background-color: var(--cta-hover);}
+
+.link-button{width: 100%;text-decoration: none;
+display: flex
+;gap: 10px;
+    align-items: center;
+    justify-content: center;}
+
+.button-text{color: var(--white);
+font-family: Poppins;
+font-size: 18px;margin: 0;
+font-weight: 700;}
+
+
+.error-message {
+    color: var(--red);
+font-family: Poppins;
+    font-size: 16px;
+    display: none;   
+}
