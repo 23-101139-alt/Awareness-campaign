@@ -17,19 +17,19 @@
 }
 
 
-
+.body{width: 100%;overflow-x: hidden;}
 
 .sec-login{    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 0 8%;
+    padding: 0 8%;overflow: hidden;
     min-width: 1080px;
     position: relative;
     z-index: 1;
     background-color: var(--background);
        background-image: url(pic/pic2.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -78,7 +78,7 @@ margin: 0;
 padding: 74px 51px;
 box-sizing: border-box;
 background-color: var(--white);
-width: 620px;}
+width: 53%;}
 
 .header-log-in-page{color:var(--textcolor);
 text-align: center;
@@ -210,3 +210,40 @@ font-family: Poppins;
     font-size: 16px;
     display: none;   
 }
+
+
+.img-login{position: absolute;right: 0;
+    position: absolute;
+right: -197px;
+    width: 49%;    min-width: 787px;    bottom: 3.5%;
+    
+}
+
+
+
+
+
+
+@media (max-width: 1280px) {
+
+.bodyy{background-color: var(--background);
+width: 100vw;}
+
+.sec-login{min-width: 1280px; }
+
+.containerr-sec-login {
+    max-width: 1080px;
+    width: 100%;}
+
+.img-login {
+
+    right: -286px;
+    width: 68%;
+    min-width: 0;}
+
+}
+
+
+
+
+

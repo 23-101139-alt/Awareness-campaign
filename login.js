@@ -4,3 +4,5 @@ document.getElementById("placeholder2-log-in-page").innerHTML = `Password:`;
 document.getElementById("forgot").innerHTML = `Forgot password`;
     document.getElementById("remember-textt").innerHTML = `Remember me`;
 document.getElementById("button-text-1").innerHTML = `Log in`;
+
+document.getElementById("error-msg").innerHTML = `Incorrect email or password`;
