@@ -370,11 +370,11 @@ width: 100%;
 .main-info-sec1 {
     max-width: 1280px;
     width: 100%;flex-direction: row;
-    display: flex;margin-top: 240px;
+    display: flex;margin-top: 122px;justify-content: space-between;
 align-items: center;}
 
 
-.text-box-sec1{display: flex;
+.text-box-sec1{display: flex;position: relative;
 flex-direction: column;width: 510.46px;
 gap: 55px;}
 
@@ -428,6 +428,45 @@ display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;}
+
+
+.img-decoration1-sec1{position: absolute;
+    left: -73px;
+    top: -90px;}
+
+
+
+.img-decoration2-sec1{    position: absolute;
+    left: 91px;
+    bottom: -70px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
