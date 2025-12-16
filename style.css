@@ -291,12 +291,12 @@ line-height: 110%;
 
 
 .lang-changer-button{display: flex;
-width: 112px;
+width: fit-content;
 height: 54px;
-padding: 10px 0;
+padding: 0 15px;
 justify-content: center;
 align-items: center;
-gap: 6px;
+gap: 4px;
 border-radius: 39px;
 border-color: var(--textcolor);
 background: var(--background-language-changer);
@@ -314,11 +314,47 @@ align-items: center;
 }
 
 
-.english{color: var(--white);
+.english{color: var(--textcolor);
 font-family: Poppins;
 font-size: 18px;
-font-weight: 600;
-line-height: normal;}
+font-weight: 700;
+line-height: 110%; /* 19.8px */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;}
+
+
+.container-login{display: flex;
+width: fit-content;
+height: 54px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+border-color: var(--textcolor);
+background: var(--background-language-changer);
+box-shadow: 1px 3px 2px 0 var(--boxshadow-languageshanger1) inset, -1px -3px 2px 0 var(--boxshadow-languageshanger2) inset, 0 0 14px 0 var(--boxshadow-languageshanger3) inset;}
+
+
+.login-button2{display: flex;
+width: fit-content;
+height: 54px;
+padding: 0 15px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 39px;
+border-color: var(--textcolor);
+background: var(--background-language-changer);
+box-shadow: 1px 3px 2px 0 var(--boxshadow-languageshanger1) inset, -1px -3px 2px 0 var(--boxshadow-languageshanger2) inset, 0 0 14px 0 var(--boxshadow-languageshanger3) inset;
+}
+
+
+
+
 
 
 
@@ -361,7 +397,7 @@ box-shadow: 1px 3px 2px 0 var(--boxshadow-languageshanger1) inset, -1px -3px 2px
 .sec1{width: 100%;height: 100vh;
 background-image: url(pic/pic5.png);
 width: 100%;
-    display: flex;
+    display: flex;position: relative;
     justify-content: center;
     padding: 0 8%;
     min-width: 1080px;}
@@ -441,16 +477,38 @@ display: -webkit-box;
     bottom: -70px;}
 
 
+.img-decoration3-sec1{      position: absolute;
+    right: 37px;
+     bottom: 93px;}
 
 
+.img-decoration4-sec1{      position: absolute;
+    left: 0;
+     top: 214px;}
 
 
+.img-container-big-sec1{position: relative;}
 
 
+.img-decoration5-sec1{  
+        position: absolute;
+    left: -19px;
+    top: -79px;
+}
 
 
+.img-decoration6-sec1{  
+    position: absolute;
+    right: -29px;
+    bottom: -93px;
+}
 
 
+.img-decoration7-sec1{  
+    position: absolute;
+    right: 0;
+   top: 243px;
+}
 
 
 

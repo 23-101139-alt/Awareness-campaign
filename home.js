@@ -5,9 +5,8 @@ document.getElementById("list4-header").innerHTML = `Gallery`;
 document.getElementById("list5-header").innerHTML = `Messages`;
 
 
-document.getElementById("eng-header").innerHTML = `EN`;
-
-document.getElementById("arb-header").innerHTML = `AR`;
+document.getElementById("eng-header").innerHTML = `Eng`;
+document.getElementById("login-header").innerHTML = `Log in`;
 
 // headerend
 document.getElementById("small-text-sec1").innerHTML = `Save Water Today for a Thirsty Tomorrow.`;
