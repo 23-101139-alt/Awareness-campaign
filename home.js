@@ -70,5 +70,81 @@ function animateOnScroll(selector) {
 
 animateOnScroll('.img-decoration-sec2 ');
 
+// sec2
+
+
+
+
+let cardssec2 = [
+  {
+    imgbg: "pic/pic21.png",
+   paragraph: `Most overuse happens 
+    because people aren’t aware of how 
+    much water everyday tasks actually
+     consume. Awareness is the first step 
+     toward smarter, sustainable habits.`,
+    header:`Overuse Water`,
+  },
+    {
+    imgbg: "pic/pic23.png",
+    paragraph: `Over the past decade, water availability 
+    in Egypt has steadily decreased due to population growth
+    , climate change, and inefficient usage. Each year, rivers, 
+    reservoirs, and aquifers hold less water, making conservation
+     more urgent than ever.`,
+    header:`Water Shortage`,
+  },
+]
+
+for(i=0 ; i < cardssec2.length ; i++){; 
+document.getElementById("cards-sec2").innerHTML += `
+                        <div class="card-sec2">
+                            <div class="sub-info-card-sec2">
+                                <figure class="figure-sec2">
+                                    <img src="${cardssec2[i].imgbg}">
+                                    <h3 class="numb-sec2" id="numb-sec2"></h3>
+                                </figure>
+                                <div class="text-cont-sec2">
+                                    <h2 class="subtitles-sec2">${cardssec2[i].header}</h2>
+                                    <p class="para1-sec2">${cardssec2[i].paragraph}</p>
+                                    <nav class="link-sec2">
+                                         <h3 class="link-text">Read more</h3>
+                                        <img src="pic/pic22.png" class="small-dropdown-sec2">
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+`;
+}
+
+
+
+document.getElementById("header-sec2").innerHTML = `Water Statistics`;
+document.getElementById("para-sec2").innerHTML = `Our water usage 
+habits shape the world around us more than we realize. These 
+statistics offer a quick look at how much water is lost every
+ day—and how small changes in behavior can make a powerful
+  difference.`;
+document.getElementById("numb-sec2").innerHTML = `68%`;
+document.getElementById("orange-bar-text1").innerHTML = `Keep Water`;
+document.getElementById("orange-bar-text2").innerHTML = `AquaCare`;
+
+document.getElementById("title-box3-sec2").innerHTML = `Limited Water`;
+
+document.getElementById("para-box3-sec2").innerHTML = `Only a small portion of the world’s water is safe to drink. Protecting and conserving this limited resource is essential for communities and the environment.`;
+
+document.getElementById("link-box3-text2").innerHTML = `Read more`;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
