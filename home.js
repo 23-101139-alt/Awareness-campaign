@@ -17,7 +17,13 @@ document.getElementById("para-sec1").innerHTML = `Water waste is becoming a seri
 document.getElementById("para2-sec1").innerHTML = `This campaign encourages everyone to use water wisely and make simple changes that truly matter. Together, we can reduce waste and keep our water supply safe for the next generations.`;
 
 
+// prelogin
 
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector(".preloaderrr").style.display = "none";
+  }, 3000);
+});
 
 
 
