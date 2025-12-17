@@ -21,6 +21,8 @@
     --boxshadow-languageshanger2:rgba(255, 255, 255, 0.10);
       --boxshadow-languageshanger3:rgba(255, 255, 255, 0.30);
 --faded-text:rgba(2, 48, 71, 0.80);
+  --mask-color: rgba(0, 0, 0, 1);
+  --design:#219EBC;
 }
 
 
@@ -623,7 +625,68 @@ display: -webkit-box;
     background-image: url(pic/pic19.png);
     background-size: auto;
     background-position: left top; 
+    display: flex;
+    flex-direction: column;
 }
+
+
+.img-decoration-sec2 {
+  width: 100%;
+  height: 306px;
+  margin-top: 20px;
+  background-image: url(pic/pic20.png);
+  opacity: 0;
+  -webkit-mask-image: linear-gradient(to right, var(--mask-color) 0%, var(--mask-color) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 0% 100%;
+  -webkit-mask-position: left;
+  -webkit-transition: opacity 0.2s ease-out, -webkit-mask-size 0.8s ease-out;
+
+  mask-image: linear-gradient(to right, var(--mask-color) 0%, var(--mask-color) 100%);
+  mask-repeat: no-repeat;
+  mask-size: 0% 100%;
+  mask-position: left;
+  transition: opacity 0.2s ease-out, mask-size 0.8s ease-out;
+}
+
+.img-decoration-sec2.animate {
+  opacity: 1;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+
+.cont-sec2 {
+    width: 100%;
+    height: 789px;
+    padding: 0 8%;
+}
+
+.main-info-sec2 {
+    max-width: 1280px;
+    width: 100%;
+    flex-direction: column;
+    gap: 62px;
+    display: flex;}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--design);
+  border-radius: 10px;
+}
+
+
+
+
 
 
 .preloaderrr {

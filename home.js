@@ -29,23 +29,6 @@ window.addEventListener("load", () => {
 
 
 
-// function animateOnScroll(selector) {
-//     const observer = new IntersectionObserver(entries => {
-//         entries.forEach(entry => {
-//             entry.target.classList.toggle('animate', entry.isIntersecting);
-//         });
-//     });
-
-//     document.querySelectorAll(selector).forEach(el => observer.observe(el));
-// }
-
-// animateOnScroll('.big-img-sec1');
-
-
-
-
-
-
 
 window.addEventListener("load", () => {
 
@@ -75,7 +58,17 @@ window.addEventListener("load", () => {
 
 
 
+function animateOnScroll(selector) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle('animate', entry.isIntersecting);
+        });
+    });
 
+    document.querySelectorAll(selector).forEach(el => observer.observe(el));
+}
+
+animateOnScroll('.img-decoration-sec2 ');
 
 
 
