@@ -171,8 +171,9 @@ function setupReadMore() {
 setupReadMore();
 
 
+// sec3
 
-
+document.getElementById("header-sec3").innerHTML = `Campaign in Action`;
 
 
 
