@@ -208,3 +208,36 @@ document.getElementById("para-sec4").innerHTML = `Every small step counts in sav
 
 
 
+
+let cardssec4 = [
+  {
+  img: "pic/pic31.png",
+  title: `Fix Leaks`,
+  paragraph:`Repair dripping taps and pipes.`,
+  },
+    {
+  img: "pic/pic32.png",
+  title: `Turn Off & Save`,
+  paragraph:`turning off taps and reduce shower time.`,
+  },
+     {
+  img: "pic/pic33.png",
+  title: `Avoid Throwing Waste`,
+  paragraph:`Keep rivers and seas clean.`,
+  },
+]
+
+for(i=0 ; i < cardssec4.length ; i++){; 
+document.getElementById("cards-sec4").innerHTML += `
+
+                            <div class="row-sec4">
+                                <figure class="circle-sec4">
+                                    <img src="${cardssec4[i].img}">
+                                </figure>
+                                <div class="cont-text-row-sec4">
+                                    <h2  class="subtitles-sec4">${cardssec4[i].title}</h2>
+                                    <p class="para-sec4-roww">${cardssec4[i].paragraph}</p>
+                                </div>
+                            </div>
+`;
+}
