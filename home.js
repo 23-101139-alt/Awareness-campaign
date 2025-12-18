@@ -384,9 +384,19 @@ document.getElementById("para-footer").innerHTML = `Empowering
 communities worldwide to protect and preserve our most precious
  resource.`;
 
+ document.getElementById("title1-footer").innerHTML = `Explore`;
+document.getElementById("list1-footer").innerHTML = `Home page`;
+document.getElementById("list2-footer").innerHTML = `Gallery`;
+document.getElementById("list3-footer").innerHTML = `Messages`;
+document.getElementById("list4-footer").innerHTML = `Blogs`;
+document.getElementById("list5-footer").innerHTML = `News`;
 
+ document.getElementById("title2-footer").innerHTML = `Legal`;
+document.getElementById("list6-footer").innerHTML = `Terms & Conditions`;
+document.getElementById("list7-footer").innerHTML = `Cookies`;
+document.getElementById("list8-footer").innerHTML = `Privacy Policy`;
 
-
+document.getElementById("last-text-footer").innerHTML = `@2025,DropSaver,AllRightsReservedbyDropSaver`;
 
 
 

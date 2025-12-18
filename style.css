@@ -693,6 +693,7 @@ display: -webkit-box;
 
 ::-webkit-scrollbar-thumb {
   background: var(--design);
+  border: 1px solid var(--white);
   border-radius: 10px;
 }
 
@@ -1666,13 +1667,19 @@ line-height: 24px; /* 133.333% */}
 .footer{width: 100%;height: 457px;
 background-color: var(--design);}
 
-.container-footer{width: 100%;
-display: flex;
-flex-direction: column;}
+.container-footer{
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
 
 .main-container-footer{width: 100%;
 padding: 71px 8% 0 8%;
-display: flex;
+display: flex;justify-content: space-between;
 flex-direction: row;}
 
 .first-box-footer{display: flex;
@@ -1692,6 +1699,92 @@ gap: 20px;}
 
 .logo-footer{width: 262.99px;
 height: 46.58px;}
+
+
+
+.box2-footer{display: flex;
+  gap: 76px;
+flex-direction: row;}
+
+.list-footer{display: flex;
+flex-direction: column;
+gap: 36px ;}
+
+
+.big-list-tiltles-footer{
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  list-style-type: none;
+}
+
+
+
+.list-titles-footer{
+  color: var(--ctatext);
+font-family: Poppins;
+font-size: 24px;
+font-weight: 700;list-style-type: none;
+line-height: 150%; /* 36px */
+}
+
+
+.sub-list-footer{list-style-type: none;
+display: flex;
+flex-direction: column;
+gap: 20px;}
+
+.navs-footer {
+  position: relative;
+  color: var(--ctatext);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none; 
+  display: inline-block;
+}
+
+.navs-footer::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 0;
+  height: 2px;
+  background-color: var(--ctatext);
+  transition: width 0.3s ease; 
+}
+
+.navs-footer:hover::after {
+  width: 100%;
+}
+
+.link-footer{text-decoration: none;}
+
+
+.last-white-rect-footer{width: 100%;
+height: 47.9px;background-color: var(--white);
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+.last-small-text-footer{
+  color: var(--textcolor);
+text-align: center;
+font-family: Poppins;
+font-size: 10px;
+font-weight: 500;
+line-height: 150%; /* 15px */
+}
+
+
+
+
+
+
+
 
 
 
@@ -1853,6 +1946,28 @@ display: -webkit-box;
         padding-right: 100px;
         min-width: 1280px;
     }
+
+
+  .footer {
+        width: 100%;
+        min-width: 1280px;
+    }
+
+
+ .main-container-footer {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        min-width: 1280px;
+    }
+
+.last-white-rect-footer {
+  
+        min-width: 1280px;
+}
+
+
+
 
 
 
