@@ -260,6 +260,15 @@ animateOnScroll('.img2-sec4-big');
 
 
 
+// sec5
+animateOnScroll('.circle1-sec5');
+animateOnScroll('.circle2-sec5');
+animateOnScroll('.circle3-sec5');
+
+
+
+
+
 
 
 
