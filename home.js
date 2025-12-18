@@ -360,11 +360,13 @@ animateSec5();
 
 
 
+// sec6
 
+document.getElementById("haeder-sec6").innerHTML = `Leave For Us Message`;
 
-
-
-
+document.getElementById("para-sec6").innerHTML = `Your voice matters.
+ Share your questions or ideas and join us in creating a future where 
+ every drop is protected.`;
 
 
 
