@@ -37,7 +37,8 @@
 .body-home{width: 100%;overflow-x: hidden;
 background-color: var(--background);}
 
-
+.body-meassages{width: 100%;overflow-x: hidden;
+background-color: var(--white);}
 
 .sec-login{    width: 100%;
     height: 100vh;
@@ -382,7 +383,7 @@ line-height: normal;}
 
 
 .conatiner-sub-buttons-left{display: flex;
-    gap: 17px;
+    gap: 10px;
 flex-direction: row;
 justify-content: center;
 align-items: center;}
@@ -1779,6 +1780,93 @@ font-weight: 500;
 line-height: 150%; /* 15px */
 }
 
+/* endfooter */
+
+.sec1-messages-page{width: 100%;
+height: 737px;}
+
+.cont-sec1-messgaes {
+  
+    width: 100%;margin-top: 112px;
+    height: 100%;
+    padding: 112px 8% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.main-info-messages-sec1 {
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    max-width: 1280px;height: 100%;
+    width: 100%;
+}
+
+
+.row1-sec1-messages-page{display: flex;
+flex-direction: row;height: fit-content;
+justify-content: space-between;width: 100%;
+align-items: flex-end;}
+
+.header-sec1-messages-page{
+  color: var(--textcolor);
+font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+line-height: 140%; /* 56px */
+}
+
+
+
+.serach-bar {
+  display: flex;
+width: 346px;
+height: 43px;
+  padding: 10px 18px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid var(--design);
+}
+
+.search-image {
+  width: 26px;
+  height: 27px;
+  background-image: url('pic/pic69.png');
+  background-size: cover;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;font-family: Poppins;
+  color: var(--textcolor);
+  padding-left: 10px;
+  display: none; 
+}
+
+
+.serach-bar.activee .search-image {
+  display: none;
+}
+
+.serach-bar.activee .search-input {
+  display: block;
+}
+
+
+.search-input::placeholder {
+  color: var(--textcolor); 
+  font-size: 16px;font-family: Poppins;
+  opacity: 1;
+}
 
 
 
@@ -1790,7 +1878,52 @@ line-height: 150%; /* 15px */
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1280px) {
