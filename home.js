@@ -198,3 +198,13 @@ const flkty = new Flickity('.row-sec3', {
 animateOnScroll('.img1-scroll-bar');
 
 
+
+
+// sec4
+
+
+document.getElementById("header-sec4").innerHTML = `Take Action Today`;
+document.getElementById("para-sec4").innerHTML = `Every small step counts in saving water. By making simple changes in your daily life, you can help conserve this precious resource .`;
+
+
+
