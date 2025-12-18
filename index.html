@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body class="body-home">
 
@@ -169,26 +170,29 @@
         </div>
     </section>
 
+<section class="sec3">
+  <div class="container-sec3">
+    <h1 class="header-sec3" id="header-sec3"></h1>
 
-    <section class="sec3">
-        <div class="container-sec3">
-            <h1 class="header-sec3" id="header-sec3"></h1>
-            <div class="scroll-bar-horizontal">
-                <div class="row-sec3">
-                    <img src="pic/pic24.png" class="img1-scroll-bar">
-                    <img src="pic/pic25.png" class="img1-scroll-bar">
-                    <img src="pic/pic26.png" class="img1-scroll-bar">
-                </div>
-                <nav class="navs-circls">
-                    <nav class="circle-highlighted-sec3"></nav>
-                    <nav class="circles-sec3"></nav>
-                    <nav class="circles-sec3"></nav>
-                </nav>
-            </div>
-        </div>
-        <img src="pic/pic27.png" class="img-decoration-sec3">
-        <img src="pic/pic28.png" class="img-decoration2-sec3">
-    </section>
+    <div class="row-sec3 js-flickity">
+      <div class="gallery-cell">
+        <img src="pic/pic24.png" class="img1-scroll-bar">
+      </div>
+      <div class="gallery-cell">
+        <img src="pic/pic25.png" class="img1-scroll-bar">
+      </div>
+      <div class="gallery-cell">
+        <img src="pic/pic26.png" class="img1-scroll-bar">
+      </div>
+    </div>
+
+    <nav class="navs-circls"></nav>
+  </div>
+
+  <img src="pic/pic27.png" class="img-decoration-sec3">
+  <img src="pic/pic28.png" class="img-decoration2-sec3">
+</section>
+
 
 
 
@@ -203,8 +207,9 @@
 
 
 
-   
-    <script src="home.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="home.js"></script>
+
 
 
 

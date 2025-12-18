@@ -974,23 +974,12 @@ line-height: 140%; /* 56px */}
   width: 100%;}
 
 
-.row-sec3{width: 100%;display: flex;  width: max-content;
-flex-direction: row;justify-content: center;
-gap: 20px;}
 
-
-.img1-scroll-bar{
-      width: 900px;;  flex-shrink: 0;
-    height: auto;
-  border-radius: 15px;
-border: 1px solid var(--white);
-box-shadow: 0 4px 4px 0 var(--shadow-imgs);
-}
 
 .navs-circls{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center;height: 43.891px;padding-bottom: 132px;
   align-items: center;
   gap: 12px;
 }
@@ -1019,16 +1008,96 @@ top: 108px;}
 left: 0;
 bottom: 120px;}
 
+.gallery-cell {
+  width: 900px; 
+  margin-right: 20px;
+}
 
+.img1-scroll-bar {
+  width: 100%; 
+  height: auto; 
+  display: block;
+  border-radius: 15px;
+  border: 1px solid var(--white);
+  box-shadow: 0 4px 4px 0 var(--shadow-imgs);
+}
 
 
 .mainn{overflow-x: hidden;}
 
+.flickity-slider {
+  position: relative; 
+}
+
+.flickity-viewport {
+  overflow: hidden;
+}
+
+.sec3 .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -101px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+.sec3 .flickity-page-dots .dot {
+    width: 43px;
+    height: 43px;
+    background: var(--design);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.sec3 .flickity-page-dots .dot.is-selected {
+    background: var(--white);
+    opacity: 1;
+}
+
+
+
+.gallery-cell {
+  width: 900px;
+  height: 554px;
+  margin-right: 20px;
+  overflow: hidden; 
+}
+
+.img1-scroll-bar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+    transform: translatex(220px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.img1-scroll-bar.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.sec3 .flickity-prev-next-button.previous {
+    left: 28px;
+        width: 56px;
+    height: 56px;
+}
+
+.sec3 .flickity-prev-next-button.next {
+    right: 38px;
+        width: 56px;
+    height: 56px;
+}
 
 
 
 
 
+
+
+    
 
 
 @media (max-width: 1280px) {
@@ -1128,9 +1197,14 @@ display: -webkit-box;
     }
 
 
+.sec3{    width: 100%;
+        min-width: 1280px;}
 
-
-
+.img1-scroll-bar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+    transform: translatex(120px);}
 
 
 }

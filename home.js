@@ -171,18 +171,6 @@ function setupReadMore() {
 setupReadMore();
 
 
-// sec3
-
-document.getElementById("header-sec3").innerHTML = `Campaign in Action`;
-
-
-
-
-
-
-
-
-
 
 animateOnScroll('.card-sec2');
 animateOnScroll('.card2-sec2');
@@ -190,5 +178,23 @@ animateOnScroll('.card2-sec2');
 
 
 
+// sec3
+
+
+
+document.getElementById("header-sec3").innerHTML = "Campaign in Action";
+
+
+const flkty = new Flickity('.row-sec3', {
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true, 
+  prevNextButtons: true, 
+  pageDots: true,   
+  draggable: true
+});
+
+
+animateOnScroll('.img1-scroll-bar');
 
 
