@@ -89,9 +89,7 @@ let cardssec2 = [
     imgbg: "pic/pic23.png",
     paragraph: `Over the past decade, water availability 
     in Egypt has steadily decreased due to population growth
-    , climate change, and inefficient usage. Each year, rivers, 
-    reservoirs, and aquifers hold less water, making conservation
-     more urgent than ever.`,
+    , climate change, and inefficient usage.`,
     header:`Water Shortage`,
   },
 ]
@@ -140,8 +138,53 @@ document.getElementById("link-box3-text2").innerHTML = `Read more`;
 
 
 
+function setupReadMore() {
+    const readMoreLinks = document.querySelectorAll('.link-sec2');
+
+    readMoreLinks.forEach(link => {
+        const para = link.closest('.text-cont-sec2').querySelector('.para1-sec2');
+        const fullText = para.textContent.trim();
+    const limit = 54; 
+
+        para.dataset.full = fullText;
+
+        if (fullText.length > limit) {
+            para.dataset.short = fullText.substring(0, limit) + '...';
+            para.textContent = para.dataset.short;
+        }
+
+        const linkText = link.querySelector('.link-text');
+    if (linkText) linkText.textContent = 'Read more';
+
+    link.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (para.textContent === para.dataset.short) {
+                 para.textContent = para.dataset.full;
+                link.querySelector('.link-text').textContent = 'Read less';
+            } else {
+                para.textContent = para.dataset.short;
+                link.querySelector('.link-text').textContent = 'Read more';
+            }
+        });
+    });
+}
+setupReadMore();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+animateOnScroll('.card-sec2');
+animateOnScroll('.card2-sec2');
 
 
 
