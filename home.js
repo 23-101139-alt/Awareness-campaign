@@ -261,18 +261,100 @@ animateOnScroll('.img2-sec4-big');
 
 
 // sec5
-animateOnScroll('.circle1-sec5');
-animateOnScroll('.circle2-sec5');
-animateOnScroll('.circle3-sec5');
+function animateSec5() {
+  animateOnScroll('.circle1-sec5');
+  animateOnScroll('.circle2-sec5');
+  animateOnScroll('.circle3-sec5');
+}
 
 
+let sec5Content = [
+  {
+    header: "Did You Know?",
+    parag1: "More than 2 billion people worldwide do not have access to safe and reliable drinking water services at their home.",
+    bg1:"pic/pic36.png",
+    bg2:"pic/pic37.png",
+    bg3:"pic/pic38.png",
+  },
+  {
+    header: "Water Fact",
+    parag1: "Agriculture uses around 70 percent of the world’s freshwater supply, making it the largest consumer globally.",
+    bg1:"pic/pic43.png",
+    bg2:"pic/pic44.png",
+    bg3:"pic/pic45.png",
+  },
+  {
+    header: "Freshwater Reality",
+    parag1: "Only a small fraction of Earth’s water is fresh and suitable for human use, making conservation essential.",
+    bg1:"pic/pic46.png",
+    bg2:"pic/pic47.png",
+    bg3:"pic/pic48.png",
+  },
+  {
+  header: "Water Insight",
+  parag1: "Nearly one third of the world’s population lives in areas affected by water stress, where demand is close to or exceeds available supply.",
+  bg1:"pic/pic49.png",
+  bg2:"pic/pic50.png",
+  bg3:"pic/pic51.png",
+},
+{
+  header: "Quick Water Fact",
+  parag1: "Producing everyday items like clothes and food requires large amounts of water, often far more than people realize in daily life.",
+  bg1:"pic/pic52.png",
+  bg2:"pic/pic53.png",
+  bg3:"pic/pic54.png",
+},
+{
+  header: "Water Truth",
+  parag1: "Simple actions such as fixing leaks and reducing waste can save thousands of liters of water per household every year.",
+  bg1:"pic/pic55.png",
+  bg2:"pic/pic56.png",
+  bg3:"pic/pic57.png",
+}
+];
+
+const container = document.getElementById("sec5-container");
+function renderRandomFact() {
+  const randomIndex = Math.floor(Math.random() * sec5Content.length);
+  const randomContent = sec5Content[randomIndex];
+
+  container.innerHTML = `
+    <div class="content-sec5">
+      <h1 class="header-sec5">${randomContent.header}</h1>
+      <p class="para-sec5">${randomContent.parag1}</p>
+
+      <button class="cta-sec5" id="new-fact-btn">
+        <span class="cta-text-sec5">New Fact</span>
+      </button>
+    </div>
+
+    <figure class="circle1-sec5" style="background-image:url(${randomContent.bg1});">
+      <img src="pic/pic40.png" class="img-decoration2-sec5">
+    </figure>
+
+    <figure class="circle2-sec5" style="background-image:url(${randomContent.bg2});"></figure>
+
+    <figure class="circle3-sec5" style="background-image:url(${randomContent.bg3});">
+      <img src="pic/pic39.png"  class="img-decoration1-sec5">
+    </figure>
+  `;
+
+  requestAnimationFrame(() => {
+    document
+      .querySelectorAll('.circle1-sec5, .circle2-sec5, .circle3-sec5')
+      .forEach(el => el.classList.remove('animate'));
+
+    animateSec5();
+  });
+
+  document
+    .getElementById("new-fact-btn")
+    .addEventListener("click", renderRandomFact);
+}
 
 
-
-
-
-
-
+renderRandomFact();
+animateSec5();
 
 
 
