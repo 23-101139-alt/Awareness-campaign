@@ -265,7 +265,7 @@
                         <span class="icon-sec6">
                             <img src="pic/pic60.png" alt="User Icon">
                         </span>
-                        <input class="text-info-sec6" type="text" id="usernamee" placeholder="Salmayasser132">
+                        <input class="text-info-sec6" type="text" id="userName" placeholder="Salmayasser132">
                         </div>
                     </fieldset>
 
@@ -275,7 +275,7 @@
                         <span class="icon-sec6">
                             <img src="pic/pic61.png" alt="User Icon">
                         </span>
-                        <input class="text-info-sec6" type="text" id="usernamee" placeholder="Samyasser@gmail.com">
+                        <input class="text-info-sec6" type="text" id="userEmail" placeholder="Samyasser@gmail.com">
                         </div>
                     </fieldset>
 
@@ -285,17 +285,17 @@
                         <span class="icon2-sec6">
                             <img src="pic/pic62.png" alt="User Icon">
                         </span>
-                        <textarea class="text-info2-sec6" type="message" id="usernamee" placeholder="Hello, I would like to  actively learn more about your water-saving campaign and how I can participate"></textarea>
+                        <textarea class="text-info2-sec6" type="message" id="userMessage" placeholder="Hello, I would like to  actively learn more about your water-saving campaign and how I can participate"></textarea>
                         </div>
                     </fieldset>
 
 
 
-                    <button class="cta-sec6">
-                        <a href="#" class="link-cta-sec6">
+                    <button button type="button" class="cta-sec6" id="sendMessageBtn">
+                    
                             <img src="pic/pic63.png">
                             <h3 class="cta-sec6-text" id="cta-sec6"></h3>
-                        </a>
+                       
                     </button>
 
 
@@ -306,6 +306,9 @@
         </div>
     </section>
 
+    <div class="success-overlay" id="successOverlay">
+
+    </div>
 
 
     <footer class="footer">
@@ -400,6 +403,7 @@
 
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="localstorage.js"></script>
 <script src="home.js"></script>
 
 

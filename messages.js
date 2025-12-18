@@ -42,6 +42,37 @@ document.getElementById("title3-msg").innerHTML = `Messages`;
 
 
 
+const messagesList = document.getElementById("messagesList");
+
+const users = JSON.parse(localStorage.getItem("localUsers")) || [];
+
+users.forEach(user => {
+  const li = document.createElement("li");
+  li.className = "main-row-messages-page";
+
+  li.innerHTML = `
+    <div class="container-name-mess">
+      <img  src="pic/pic60.png">
+      <h3 class="information1-tabel-mess">${user.name}</h3>
+    </div>
+
+    <div class="container-email-mess">
+      <img  src="pic/pic61.png">
+      <h3 class="information2-tabel-mess">${user.email}</h3>
+    </div>
+
+    <div class="container-messages-mess">
+      <img  src="pic/pic62.png">
+      <h3 class="information3-tabel-mess">${user.message}</h3>
+    </div>
+
+    <button class="cta-messages">
+      <img src="pic/pic70.png">
+    </button>
+  `;
+
+  messagesList.appendChild(li);
+});
 
 
 
