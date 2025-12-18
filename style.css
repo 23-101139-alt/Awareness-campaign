@@ -1663,19 +1663,35 @@ line-height: 24px; /* 133.333% */}
 
 
 
+.footer{width: 100%;height: 457px;
+background-color: var(--design);}
 
+.container-footer{width: 100%;
+display: flex;
+flex-direction: column;}
 
+.main-container-footer{width: 100%;
+padding: 71px 8% 0 8%;
+display: flex;
+flex-direction: row;}
 
+.first-box-footer{display: flex;
+flex-direction: column;width: 527.749px;
+gap: 34px;}
 
+.para-footer{
+color: var(--paragraph-white);
+font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 140%;}
 
+.icons-container-footer{display: flex;
+flex-direction: row;align-items: center;
+gap: 20px;}
 
-
-
-
-
-
-
-
+.logo-footer{width: 262.99px;
+height: 46.58px;}
 
 
 

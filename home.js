@@ -378,6 +378,13 @@ animateOnScroll('.img-sec6');
 
 
 
+// footer
+
+document.getElementById("para-footer").innerHTML = `Empowering 
+communities worldwide to protect and preserve our most precious
+ resource.`;
+
+
 
 
 
