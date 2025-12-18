@@ -34,6 +34,26 @@ document.getElementById("header-sec1").innerHTML = `Contact Messages`;
     searchInput.focus(); 
     });
 
+document.getElementById("title1-msg").innerHTML = `User Name`;
+
+document.getElementById("title2-msg").innerHTML = `Email`;
+
+document.getElementById("title3-msg").innerHTML = `Messages`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
