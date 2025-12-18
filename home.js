@@ -368,6 +368,62 @@ document.getElementById("para-sec6").innerHTML = `Your voice matters.
  Share your questions or ideas and join us in creating a future where 
  every drop is protected.`;
 
+document.getElementById("place-holder-sec6").innerHTML = `Your User Name`;
+document.getElementById("place-holder2-sec6").innerHTML = `Your Email`;
+document.getElementById("place-holder3-sec6").innerHTML = `Your Message`;
+
+document.getElementById("cta-sec6").innerHTML = `Send Message`;
+
+animateOnScroll('.img-sec6');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

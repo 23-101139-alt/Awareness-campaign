@@ -28,6 +28,7 @@
   --card-hover:#00CEFF;;
   --shadow-imgs:rgba(0, 0, 0, 0.25);
   --ctatext:#FFF;
+  --gray-text-form:rgba(30, 41, 57, 0.38);
 }
 
 
@@ -1465,7 +1466,7 @@ top: -8px;}
 
 
 
-.sec6{width: 100%;height: 937px;
+.sec6{width: 100%;height: fit-content;
 background-image: url(pic/pic58.png);
 background-position: top;
 background-size: cover;}
@@ -1480,7 +1481,7 @@ background-size: cover;}
 }
 
 .main-info-sec6 {
-    display: flex;
+    display: flex;gap: 20px;
     flex-direction: row;
     max-width: 1280px;
     justify-content: space-between;
@@ -1491,7 +1492,7 @@ background-size: cover;}
 
 .text-cont-sec6{display: flex;
 flex-direction: column;gap: 56px;
-width: 527.97px;}
+width: 50%;justify-content: flex-end;}
 
 
 .header-sec6{color: var(--textcolor);
@@ -1507,6 +1508,168 @@ font-family: Poppins;
 font-size: 18px;
 font-weight: 500;
 line-height: 140%; /* 25.2px */}
+
+.form-sec6{display: flex;
+width: 50%;
+padding: 38px;gap: 24px;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 15px;
+background: var(--design);}
+
+
+
+.input1-sec6{display: flex;flex-direction: column;
+    gap: 22px;margin: 0;width: 100%;
+    padding: 0;border-color: transparent;}
+
+.placeholder-sec6{color: var(--ctatext);
+font-family: Poppins;height: 20px;
+font-size: 20px;margin: 0;padding: 0;
+font-weight: 700;}
+
+
+.text-info-sec6 {
+height: 60px;width: 100%;border-radius: 10px;
+border-radius: 5px;color: var(--gray-text-form);
+    display: flex;background-color:var(--ctatext)
+;  border: 1px solid var(--ctatext);font-family: Poppins;
+padding-left: 16px;
+
+}
+.text-info-sec6:focus,
+.text-info-sec6:active,
+.text-info-sec6:visited,
+.text-info-sec6:focus-visible,
+.text-info-sec6:focus-within,
+.text-info-sec6:hover {
+  color: var(--textcolor) !important;
+border: 1px solid var(--ctatext);
+  outline: none;border-color: transparent;
+  box-shadow: none;
+}
+
+
+
+
+.input-icon-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon-wrapper .icon-sec6 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+.text-info-sec6 {
+  width: 100%;
+  padding-left: 40px; 
+  height: 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--ctatext);
+}
+
+
+
+
+
+
+.text-info2-sec6 {
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 30px;  
+  padding-right: 40px;
+  min-height: 155px; font-family: Poppins;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--ctatext);
+width: 100%;border-radius: 10px;
+border-radius: 5px;color: var(--gray-text-form);
+    display: flex;background-color:var(--ctatext)
+;  border: 1px solid var(--ctatext);
+}
+
+.text-info2-sec6:focus,
+.text-info2-sec6:active,
+.text-info2-sec6:visited,
+.text-info2-sec6:focus-visible,
+.text-info2-sec6:focus-within,
+.text-info2-sec6:hover {
+  color: var(--textcolor) !important;
+border: 1px solid var(--ctatext);
+  outline: none;border-color: transparent;
+  box-shadow: none;
+}
+
+.input-icon-wrapper .icon2-sec6 {
+    position: absolute;
+    left: 10px;
+    top: 37%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+
+.cta-sec6{width: 100%;
+display: flex;
+height: 50px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;border-color: transparent;
+border-radius: 15px;
+background-color: var(--cta);
+transition: 300ms all linear;}
+
+.cta-sec6:hover{background-color: var(--cta-hover);}
+
+.link-cta-sec6{display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;text-decoration: none;
+}
+
+
+.cta-sec6-text{color: var(--ctatext);
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 133.333% */}
+
+
+.img-sec6{display: block;
+      opacity: 0;
+              transform: scale(0.2);    
+    transition: all 0.6s ease;
+}
+
+
+.img-sec6.animate {
+    opacity: 1;  transform: scale(1);    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1662,10 +1825,18 @@ display: -webkit-box;
 .circle3-sec5 {
     right: -138px;}
 
+    .sec6 {
+        width: 100%;
+        min-width: 1280px;
+    }
 
 
-
-
+    .cont-sec6 {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        min-width: 1280px;
+    }
 
 
 
