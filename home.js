@@ -455,11 +455,10 @@ document.getElementById("sendMessageBtn").addEventListener("click", () => {
     return;
   }
 
-  let users = JSON.parse(localStorage.getItem("localUsers")) || [];
+let messages = JSON.parse(localStorage.getItem("localUsers")) || [];
+messages.push({ name, email, message });
+localStorage.setItem("localUsers", JSON.stringify(messages));
 
-  users.push({ name, email, message });
-
-  localStorage.setItem("localUsers", JSON.stringify(users));
 
   showSuccessMessage();
 
