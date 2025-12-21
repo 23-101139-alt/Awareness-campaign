@@ -95,3 +95,48 @@ document.getElementById("list7-footer").innerHTML = `Cookies`;
 document.getElementById("list8-footer").innerHTML = `Privacy Policy`;
 
 document.getElementById("last-text-footer").innerHTML = `@2025,DropSaver,AllRightsReservedbyDropSaver`;
+
+
+
+
+
+const navLinks = document.querySelectorAll(".link-header li");
+
+for (let i = 0; i < navLinks.length; i++) {
+    const li = navLinks[i];
+    const linkHref = li.parentElement.getAttribute("href");
+
+    if (linkHref === window.location.pathname.split("/").pop()) {
+        li.classList.add("active");
+    }
+
+    else if (linkHref.startsWith("#") && window.location.pathname.split("/").pop() === "index.html") {
+        const section = document.querySelector(linkHref);
+        if (section) {
+            window.addEventListener("scroll", () => {
+                const sectionTop = section.offsetTop - 122;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionBottom) {
+                    document.querySelectorAll(".list-header-text").forEach(l => l.classList.remove("active"));
+                    li.classList.add("active");
+                }
+            });
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
