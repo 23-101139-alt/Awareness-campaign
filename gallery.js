@@ -61,17 +61,57 @@ let secgallery = [
 
 ]
 
-for(i=0 ; i < secgallery.length ; i++){; 
-document.getElementById("secgallerypage").innerHTML += `
-                    <figure class="small-container-img">
-                        <img src="${secgallery[i].img}" class="img-gallery-page">
-                    </figure>
-`;
+function loadGallery() {
+  const container = document.getElementById("secgallerypage");
+  container.innerHTML = "";
+
+  for (let i = 0; i < secgallery.length; i++) {
+    container.innerHTML += `
+      <figure class="small-container-img">
+        <img 
+          src="${secgallery[i].img}" 
+          class="img-gallery-page"
+          onclick="openLightbox('${secgallery[i].img}')"
+        >
+      </figure>
+    `;
+  }
+
+
+const observer5 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle('animate', entry.isIntersecting);
+  });
+});
+document.querySelectorAll('.img-gallery-page').forEach(el => observer5.observe(el));
+
+
+
+
+
 }
 
 
 
 
+
+
+function openLightbox(imgSrc) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightboxImg.src = imgSrc;
+  lightbox.style.display = "flex";
+}
+
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+
+
+document.addEventListener("DOMContentLoaded", loadGallery);
 
 
 

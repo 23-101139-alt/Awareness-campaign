@@ -29,6 +29,8 @@
   --shadow-imgs:rgba(0, 0, 0, 0.25);
   --ctatext:#FFF;
   --gray-text-form:rgba(30, 41, 57, 0.38);
+  --lightbox:rgba(0, 0, 0, 0.8);
+
 }
 
 
@@ -2127,7 +2129,7 @@ height: fit-content;}
     padding: 224px 8% 112px;
   display: flex;
 justify-content: center;
-flex-direction: column;
+flex-direction: column;align-items: center;
 gap: 70px;}
 
 
@@ -2165,21 +2167,81 @@ gap: 20px;
 flex-wrap: wrap;}
 
 
-
 .small-container-img {
-  flex: 0 0 calc(33.333% - 20px);
-  box-sizing: border-box;
+  flex: 0 0 calc(33.333% - 20px); 
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+aspect-ratio: 3 / 3;
+}
+
+.small-container-img:hover {
+  transform: scale(1.05);
 }
 
 .img-gallery-page {
   width: 100%;
-  height: auto;
-  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  border-radius: 15px;
+
+  opacity: 0; 
+  transform: translatey(320px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.img-gallery-page.animate {
+  opacity: 1;
+  transform: translatey(0); 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--lightbox);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding-top: 112px;
+}
+
+.lightbox img {
+width: 48%;
+  border-radius: 15px;
+}
+
+.close-lightbox {
+position: absolute;
+    top: 206px;
+    width: 60.8px;
+    height: 60.8px;
+    right: 8%;
+    border-radius: 50%;
+    background-color: var(--design);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
 
 
@@ -2376,6 +2438,27 @@ display: -webkit-box;
         padding-right: 100px;
         min-width: 1280px;
     }
+
+
+   .cont-gallery {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        min-width: 1280px;
+    }
+
+    .sec1-gallery{
+        width: 100%;
+        min-width: 1280px;
+    }
+.first-row-gallery{display: flex;
+flex-direction: column;width: 70%;}
+
+
+
+
+
+
 
 
 }
