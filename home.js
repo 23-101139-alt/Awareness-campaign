@@ -501,6 +501,11 @@ const sectionTop = section.offsetTop - 122;
 
 // languagechangerrr
 
+document.addEventListener("DOMContentLoaded", () => {
+  applyDirection(currentLang);
+  updateText(currentLang);
+});
+
 
 function updateText(lang) {
   const data = langData[lang];
@@ -602,45 +607,56 @@ function renderSec2Cards(lang) {
     `;
   }
 
-  setupReadMore();
+setupReadMore(currentLang);
   animateOnScroll('.card-sec2');
   animateOnScroll('.card2-sec2');
 }
-
 function setupReadMore(lang) {
-    const readMoreLinks = document.querySelectorAll('.link-sec2');
+  const readMoreLinks = document.querySelectorAll('.link-sec2');
 
-    for (let i = 0; i < readMoreLinks.length; i++) {
-        const link = readMoreLinks[i];
-        const para = link.closest('.text-cont-sec2').querySelector('.para1-sec2');
-        const fullText = para.textContent.trim();
-        const limit = 54;
+  for (let i = 0; i < readMoreLinks.length; i++) {
+    const link = readMoreLinks[i];
+    const para = link
+      .closest('.text-cont-sec2')
+      .querySelector('.para1-sec2');
 
-        para.dataset.full = fullText;
+    if (!para) continue;
 
-        if (fullText.length > limit) {
-            para.dataset.short = fullText.substring(0, limit) + '...';
-            para.textContent = para.dataset.short;
-        } else {
-            para.dataset.short = fullText;
-        }
+    const fullText = para.textContent.trim();
+    const limit = 54;
 
-        const linkText = link.querySelector('.link-text');
-        if (linkText) linkText.textContent = lang === 'AR' ? 'اقرأ المزيد' : 'Read more';
+    para.dataset.full = fullText;
+    para.dataset.short =
+      fullText.length > limit
+        ? fullText.substring(0, limit) + '...'
+        : fullText;
 
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (para.textContent === para.dataset.short) {
-                para.textContent = para.dataset.full;
-                link.querySelector('.link-text').textContent = lang === 'AR' ? 'اقرأ أقل' : 'Read less';
-            } else {
-                para.textContent = para.dataset.short;
-                link.querySelector('.link-text').textContent = lang === 'AR' ? 'اقرأ المزيد' : 'Read more';
-            }
-        });
+    para.textContent = para.dataset.short;
+
+    const linkText = link.querySelector('.link-text');
+    if (linkText) {
+      linkText.textContent =
+        fullText.length > limit
+          ? lang === 'AR' ? 'اقرأ المزيد' : 'Read more'
+          : '';
     }
-    
+
+    link.onclick = function (e) {
+      e.preventDefault();
+
+      const expanded = para.textContent === para.dataset.full;
+
+      para.textContent = expanded
+        ? para.dataset.short
+        : para.dataset.full;
+
+      linkText.textContent = expanded
+        ? lang === 'AR' ? 'اقرأ المزيد' : 'Read more'
+        : lang === 'AR' ? 'اقرأ أقل' : 'Read less';
+    };
+  }
 }
+
 
 
 
@@ -687,18 +703,24 @@ updateText(currentLang);
 function changeLang(lang) {
     currentLang = lang; 
   localStorage.setItem("language", lang);
+  applyDirection(lang);
   updateText(lang);
-  if (lang === "AR") {
-    document.body.classList.remove("en");
-    document.body.classList.add("ar");
-  } else {
-    document.body.classList.remove("ar");
-    document.body.classList.add("en");
-  }
-  document.body.dir = lang === "AR" ? "rtl" : "ltr";
 
 }
 
+
+
+function applyDirection(lang) {
+  if (lang === "AR") {
+    document.body.classList.remove("en");
+    document.body.classList.add("ar");
+    document.body.dir = "rtl";
+  } else {
+    document.body.classList.remove("ar");
+    document.body.classList.add("en");
+    document.body.dir = "ltr";
+  }
+}
 
 
 

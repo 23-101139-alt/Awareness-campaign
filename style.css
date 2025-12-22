@@ -211,9 +211,9 @@ background-color: var(--white);}
     z-index: 1;
     background-color: var(--background);
        background-image: url(pic/pic2.png);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: bottom;
+     background-position: left bottom;
 }
 
 
@@ -289,7 +289,7 @@ border-radius: 5px;color: var(--textcolor);
     display: flex;background-color: transparent
 ;border: 2px solid var(--textcolor);
 padding-left: 26.92px;box-sizing: border-box;
-
+padding-right: 26.92px;
 }
 .text-info-login:focus,
 .text-info-login:active,
@@ -478,7 +478,7 @@ box-shadow: 1px 3px 2px 0 var(--boxshadow-languageshanger1) inset, -1px -3px 2px
 width: fit-content;
 height: 54px;
 padding: 0 5px;
-justify-content: center;
+justify-content: center;cursor: pointer;
 align-items: center;
 gap: 4px;
 border-radius: 39px;
@@ -2687,9 +2687,14 @@ flex-direction: column;width: 70%;}
 
 
 
+.body.ar .img-login {
+    left: -320px;
+    right: unset;
+    transform: scalex(-1);
+}
 
-
-
+.content-info-login-page {
+    width: 60%;}
 
 
 }

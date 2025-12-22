@@ -187,6 +187,11 @@ for (let i = 0; i < navLinks.length; i++) {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  applyDirection(currentLang);
+  updateText(currentLang);
+});
+
 
 
 function updateText(lang) {
@@ -229,18 +234,24 @@ updateText(currentLang);
 function changeLang(lang) {
     currentLang = lang; 
   localStorage.setItem("language", lang);
+  applyDirection(lang);
   updateText(lang);
-  if (lang === "AR") {
-    document.body.classList.remove("en");
-    document.body.classList.add("ar");
-  } else {
-    document.body.classList.remove("ar");
-    document.body.classList.add("en");
-  }
-  document.body.dir = lang === "AR" ? "rtl" : "ltr";
 
 }
 
+
+
+function applyDirection(lang) {
+  if (lang === "AR") {
+    document.body.classList.remove("en");
+    document.body.classList.add("ar");
+    document.body.dir = "rtl";
+  } else {
+    document.body.classList.remove("ar");
+    document.body.classList.add("en");
+    document.body.dir = "ltr";
+  }
+}
 
 
 
