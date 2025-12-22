@@ -133,6 +133,11 @@ messages_title1:"User Name",
 messages_title2:"Email",
 messages_title3:"Messages",
 
+hedaer_gallery:"Gallery",
+para_gallery:"Discover highlights from our awareness campaign and see how our message came to life through real moments and real people.",
+
+
+
   },
 
   AR: {
@@ -240,6 +245,9 @@ messages_hedaer: "رسائل الاتصال",
 messages_title1:"اسم المستخدم",
 messages_title2:"بريد إلكتروني",
 messages_title3:"رسائل",
+
+hedaer_gallery:"معرض",
+para_gallery:"تؤثر عاداتنا في استخدام المياه على العالم من حولنا أكثر مما نتصور. تقدم هذه الإحصائيات لمحة سريعة عن كمية المياه المفقودة يوميًا، وكيف يمكن لتغييرات بسيطة في السلوك أن تُحدث فرقًا كبيرًا.",
 
 
 
