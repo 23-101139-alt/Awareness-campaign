@@ -47,6 +47,18 @@ html {
 
 }
 
+.body-meassages.darkmode {
+  --background: #0F1419;
+  --textcolor:#FFF;
+    --header:rgba(24, 29, 43, 0.75);;
+  --faded-text:rgba(255, 255, 255, 0.80);
+  --white:#1A1F2E;
+  --paragraph:rgba(255, 255, 255, 0.80);;
+  --design:#2A5F7A;
+
+}
+
+
 .body-home.darkmode  .sec1{
 background-image: url(pic/pic89.png);
 }
@@ -115,6 +127,29 @@ background-image: url(pic/pic89.png);
 .body-home.darkmode .sec6{
   background-image:  url("pic/pic106.png");
 }
+
+.body-meassages.darkmode .logo-header{
+  content: url("pic/pic93.png");
+}
+
+.body-meassages.darkmode .theme-img{
+  content: url("pic/pic94.png");
+}
+.body-meassages.darkmode .img-decoration-galleryy2{
+  content: url("pic/pic107.png");
+}
+.body-meassages.darkmode .img-decoration-galleryy1{
+  content: url("pic/pic108.png");
+}
+
+
+
+
+
+
+
+
+
 
 
 
