@@ -10,7 +10,9 @@ document.getElementById("arab-header").innerHTML = `Ar`;
 document.getElementById("login-header").innerHTML = `Log in`;
 
 // headerend
-
+  document.getElementById("change").addEventListener("click", () => {
+  document.body.classList.toggle("darkmode");
+});
 // prelogin
 
 
