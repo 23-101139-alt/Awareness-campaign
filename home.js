@@ -10,6 +10,14 @@ document.getElementById("arab-header").innerHTML = `Ar`;
 document.getElementById("login-header").innerHTML = `Log in`;
 
 // headerend
+
+
+  document.getElementById("change").addEventListener("click", () => {
+  document.body.classList.toggle("darkmode");
+});
+
+
+
 document.getElementById("small-text-sec1").innerHTML = `Save Water Today for a Thirsty Tomorrow.`;
 document.getElementById("big-text-sec1").innerHTML = `Every Drop Counts!`;
 
@@ -721,9 +729,6 @@ function applyDirection(lang) {
     document.body.dir = "ltr";
   }
 }
-
-
-
 
 
 
