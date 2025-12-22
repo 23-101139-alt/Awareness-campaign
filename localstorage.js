@@ -135,6 +135,14 @@ messages_title3:"Messages",
 
 hedaer_gallery:"Gallery",
 para_gallery:"Discover highlights from our awareness campaign and see how our message came to life through real moments and real people.",
+login_hedaerr:"Log In to Your Account",
+
+login_form1:"Email Address:",
+login_form2:"Password:",
+login_form3:"forgot password",
+login_form4:"Remember me",
+
+cta_loginn:"Log in",
 
 
 
@@ -248,6 +256,16 @@ messages_title3:"رسائل",
 
 hedaer_gallery:"معرض",
 para_gallery:"تؤثر عاداتنا في استخدام المياه على العالم من حولنا أكثر مما نتصور. تقدم هذه الإحصائيات لمحة سريعة عن كمية المياه المفقودة يوميًا، وكيف يمكن لتغييرات بسيطة في السلوك أن تُحدث فرقًا كبيرًا.",
+login_hedaerr:"سجل الدخول إلى حسابك",
+
+
+login_form1:"عنوان البريد الإلكتروني:",
+login_form2:"كلمة المرور:",
+login_form3:"هل نسيت كلمة السر",
+login_form4:"تذكرنى",
+
+cta_loginn:"تسجيل الدخول",
+
 
 
 

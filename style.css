@@ -120,6 +120,49 @@ right: 91px;
 }
 
 
+.body.en, 
+.body.en * {
+  font-family: 'Poppins', sans-serif !important;
+}
+.body.ar, 
+.body.ar * {
+  font-family: 'Noto Sans Arabic', sans-serif !important;
+}
+
+.body.ar .logintext{
+      text-underline-offset: 6px;
+}
+.body.ar .english{
+     text-decoration-line: none;
+}
+
+.body.ar .arabicc{
+     text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    text-underline-position: from-font;
+}
+
+
+
+
+
+.body.ar .img-login{
+          left: -196px;
+    right: unset;
+    transform: scalex(-1);
+}
+
+.body.ar .sec-login{
+    background-image: url(pic/pic88.png);
+}
+
+.body.ar .forgot-pass{
+text-align:left;
+}
+
 
 
 
@@ -136,7 +179,21 @@ background-color: var(--white);}
 }
 
 
+.body-meassages.ar .logintext{
+      text-underline-offset: 6px;
+}
+.body-meassages.ar .english{
+     text-decoration-line: none;
+}
 
+.body-meassages.ar .arabicc{
+     text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    text-underline-position: from-font;
+}
 
 
 
@@ -145,10 +202,10 @@ background-color: var(--white);}
 
 
 .sec-login{    width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    padding: 0 8%;overflow: hidden;
+    padding: 224px 8%;overflow: hidden;
     min-width: 1080px;
     position: relative;
     z-index: 1;
@@ -2285,8 +2342,17 @@ height: 50px;
 
 
 
-.sec1-gallery{width: 100%;
+.sec1-gallery{width: 100%;position: relative;
 height: fit-content;}
+
+.img-decoration-galleryy1{position: absolute;
+right: 0;
+    top:183px;}
+
+.img-decoration-galleryy2{    position: absolute;
+    left: 73px;
+    top: 276px;
+}
 
 .cont-gallery{
     width: 100%;
