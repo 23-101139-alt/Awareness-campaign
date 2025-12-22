@@ -1927,7 +1927,7 @@ padding: 0 40px;
 .text-info-sec6:focus-visible,
 .text-info-sec6:focus-within,
 .text-info-sec6:hover {
-  color: var(--textcolor) !important;
+  color: var(--contstanttextcolor) !important;
 border: 1px solid var(--ctatext);
   outline: none;border-color: transparent;
   box-shadow: none;
@@ -1987,7 +1987,7 @@ border-radius: 5px;color: var(--gray-text-form);
 .text-info2-sec6:focus-visible,
 .text-info2-sec6:focus-within,
 .text-info2-sec6:hover {
-  color: var(--textcolor) !important;
+  color: var(--gray-text-form) !important;
 border: 1px solid var(--ctatext);
   outline: none;border-color: transparent;
   box-shadow: none;

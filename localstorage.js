@@ -143,7 +143,11 @@ login_form3:"forgot password",
 login_form4:"Remember me",
 
 cta_loginn:"Log in",
-
+ successPopup: {
+      title: "Message Sent",
+      message: "Thank you for reaching out. Your message has been successfully sent, and we will get back to you as soon as possible.",
+      button: "Continue Browsing"
+    }
 
 
   },
@@ -266,7 +270,11 @@ login_form4:"تذكرنى",
 
 cta_loginn:"تسجيل الدخول",
 
-
+ successPopup: {
+      title: "تم إرسال الرسالة",
+      message: "شكرًا لتواصلك معنا. تم إرسال رسالتك بنجاح وسنعاود التواصل معك في أقرب وقت ممكن.",
+      button: "العودة للتصفح"
+    }
 
 
   }

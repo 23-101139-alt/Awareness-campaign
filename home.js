@@ -413,22 +413,18 @@ document.getElementById("last-text-footer").innerHTML = `@2025,DropSaver,AllRigh
 
 function showSuccessMessage() {
   const overlay = document.getElementById("successOverlay");
+  const texts = langData[currentLang].successPopup;
 
   overlay.innerHTML = `
     <div class="success-box">
-      <h2>Message Sent</h2>
-      <p>
-        Thank you for reaching out. Your message has been successfully sent,
-        and we will get back to you as soon as possible.
-      </p>
-      <button id="continueBrowsingBtn">Continue Browsing</button>
+      <h2>${texts.title}</h2>
+      <p>${texts.message}</p>
+      <button id="continueBrowsingBtn">${texts.button}</button>
 
-
-
-              <img src="pic/pic71.png" class="img-dec-popup">
-        <img src="pic/pic72.png" class="img2-dec-popup">
-        <img src="pic/pic73.png" class="img3-dec-popup">
-        <img src="pic/pic74.png" class="img4-dec-popup">
+      <img src="pic/pic71.png" class="img-dec-popup">
+      <img src="pic/pic72.png" class="img2-dec-popup">
+      <img src="pic/pic73.png" class="img3-dec-popup">
+      <img src="pic/pic74.png" class="img4-dec-popup">
     </div>
   `;
 
