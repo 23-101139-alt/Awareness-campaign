@@ -59,6 +59,29 @@ html {
 }
 
 
+.body.darkmode {
+  --background: #0F1419;
+  --textcolor:#FFF;
+    --header:rgba(24, 29, 43, 0.75);;
+  --faded-text:rgba(255, 255, 255, 0.80);
+  --white:#1A1F2E;
+  --paragraph:rgba(255, 255, 255, 0.80);;
+  --design:#2A5F7A;
+
+}
+
+
+
+
+.body.darkmode .logo-header{
+  content: url("pic/pic93.png");
+}
+
+.body.darkmode .theme-img{
+  content: url("pic/pic94.png");
+}
+
+
 .body-home.darkmode  .sec1{
 background-image: url(pic/pic89.png);
 }
@@ -280,6 +303,20 @@ right: 91px;
     background-image: url(pic/pic88.png);
 }
 
+
+
+
+.body.en.darkmode .sec-login {
+    background-image: url(pic/pic109.png);
+}
+
+
+.body.ar.darkmode .sec-login {
+    background-image: url(pic/pic110.svg);
+}
+
+
+
 .body.ar .forgot-pass{
 text-align:left;
 }
@@ -380,10 +417,10 @@ background-color: var(--white);}
 margin: 0;
 padding: 74px 51px;
 box-sizing: border-box;
-background-color: var(--white);
+background-color: var(--constantwhite);
 width: 53%;}
 
-.header-log-in-page{color:var(--textcolor);
+.header-log-in-page{color:var(--contstanttextcolor);
 text-align: center;
 font-family: Poppins;
 font-size: 32px;
@@ -398,7 +435,7 @@ gap: 30px;}
     gap: 22px;margin: 0;
     padding: 0;border-color: transparent;}
 
-.placeholder-login{color: var(--textcolor);
+.placeholder-login{color: var(--contstanttextcolor);
 font-family: Poppins;
 font-size: 24px;margin: 0;padding: 0;
 font-weight: 600;}
@@ -406,9 +443,9 @@ font-weight: 600;}
 
 .text-info-login {
 height: 47px;
-border-radius: 5px;color: var(--textcolor);
+border-radius: 5px;color: var(--contstanttextcolor);
     display: flex;background-color: transparent
-;border: 2px solid var(--textcolor);
+;border: 2px solid var(--contstanttextcolor);
 padding-left: 26.92px;box-sizing: border-box;
 padding-right: 26.92px;
 }
@@ -418,8 +455,8 @@ padding-right: 26.92px;
 .text-info-login:focus-visible,
 .text-info-login:focus-within,
 .text-info-login:hover {
-  color: var(--textcolor) !important;
-  border: 2.019px solid var(--textcolor);
+  color: var(--contstanttextcolor) !important;
+  border: 2.019px solid var(--contstanttextcolor);
   background-color: transparent;
   outline: none;
   box-shadow: none;
@@ -433,7 +470,7 @@ padding-right: 26.92px;
     margin: 0;padding: 0;border-color: transparent;
 }
 
-.forgot-pass{color: var(--textcolor);
+.forgot-pass{color: var(--contstanttextcolor);
 text-align: right;
 font-family: Poppins;
 font-size: 16px;
@@ -458,7 +495,7 @@ text-underline-position: from-font;
   background: transparent; 
   appearance: none;
   -webkit-appearance: none;
-  border: 2px solid var(--textcolor);
+  border: 2px solid var(--contstanttextcolor);
   cursor: pointer;margin: 0;
   position: relative;    flex-shrink: 0;
     display: inline-block;
@@ -472,12 +509,12 @@ text-underline-position: from-font;
       left: 7px;
   width: 6px;
   height: 12px;
-  border: solid var(--textcolor);
+  border: solid var(--contstanttextcolor);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 
-.rember-text{color: var(--textcolor);
+.rember-text{color: var(--contstanttextcolor);
 font-family: Poppins;
 font-size: 22px;
 font-style: normal;
@@ -1282,9 +1319,9 @@ box-shadow: -2px 4px 30.4px 0 var(--card-hover);}
 .preloaderrr {
   transition: opacity .5s ease;
   position: fixed;
-  inset: 0;
+  inset: 0;;width: 100%;
   z-index: 9999;
-  background-color: var(--white);
+  background-color: var(--constantwhite);
   display: flex;
   justify-content: center;
   align-items: center;z-index: 111111111111111111111;
