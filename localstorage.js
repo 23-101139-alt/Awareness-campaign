@@ -126,6 +126,13 @@ list10_footer: "Privacy Policy",
 
 
 verysmalltextfooter: "@2025,DropSaver,AllRightsReservedbyDropSaver",
+
+messages_hedaer: "Contact Messages",
+
+messages_title1:"User Name",
+messages_title2:"Email",
+messages_title3:"Messages",
+
   },
 
   AR: {
@@ -228,6 +235,12 @@ list8_footer: "الشروط والأحكام",
 list9_footer: "ملفات تعريف الارتباط",
 list10_footer: "سياسة الخصوصية",
 verysmalltextfooter: "© ٢٠٢٥، دروبسيف، جميع الحقوق محفوظة لدروبسيف",
+messages_hedaer: "رسائل الاتصال",
+
+messages_title1:"اسم المستخدم",
+messages_title2:"بريد إلكتروني",
+messages_title3:"رسائل",
+
 
 
   }
