@@ -440,15 +440,6 @@ function showSuccessMessage() {
 
 
 
-
-
-
-
-
-
-
-
-
 document.getElementById("sendMessageBtn").addEventListener("click", () => {
   const name = document.getElementById("userName").value.trim();
   const email = document.getElementById("userEmail").value.trim();
@@ -644,20 +635,32 @@ function setupReadMore(lang) {
           ? lang === 'AR' ? 'اقرأ المزيد' : 'Read more'
           : '';
     }
+link.onclick = function (e) {
+  e.preventDefault();
 
-    link.onclick = function (e) {
-      e.preventDefault();
+  const expanded = para.textContent === para.dataset.full;
 
-      const expanded = para.textContent === para.dataset.full;
 
-      para.textContent = expanded
-        ? para.dataset.short
-        : para.dataset.full;
+  if (expanded) {
+    para.textContent = para.dataset.short;
+  } else {
+    para.textContent = para.dataset.full;
+  }
 
-      linkText.textContent = expanded
-        ? lang === 'AR' ? 'اقرأ المزيد' : 'Read more'
-        : lang === 'AR' ? 'اقرأ أقل' : 'Read less';
-    };
+  if (expanded) {
+    if (lang === 'AR') {
+      linkText.textContent = 'اقرأ المزيد';
+    } else {
+      linkText.textContent = 'Read more';
+    }
+  } else {
+    if (lang === 'AR') {
+      linkText.textContent = 'اقرأ أقل';
+    } else {
+      linkText.textContent = 'Read less';
+    }
+  }
+};
   }
 }
 
