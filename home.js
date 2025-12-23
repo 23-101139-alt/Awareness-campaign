@@ -682,10 +682,16 @@ function renderRandomFact(sec5Content) {
         </span>
       </button>
     </div>
+    
 
-    <figure class="circle1-sec5" style="background-image:url('${randomContent.bg1}')"></figure>
+    <figure class="circle1-sec5" style="background-image:url('${randomContent.bg1}')">
+    <img src="pic/pic40.png" class="img-decoration2-sec5">
+    </figure>
+
     <figure class="circle2-sec5" style="background-image:url('${randomContent.bg2}')"></figure>
-    <figure class="circle3-sec5" style="background-image:url('${randomContent.bg3}')"></figure>
+    <figure class="circle3-sec5" style="background-image:url('${randomContent.bg3}')">
+    <img src="pic/pic39.png"  class="img-decoration1-sec5">
+    </figure>
   `;
   animateSec5();
   document
