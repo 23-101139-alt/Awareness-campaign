@@ -790,7 +790,17 @@ box-shadow: 1px 3px 2px 0 var(--boxshadow-languageshanger1) inset, -1px -3px 2px
 
 
 
-
+.ffixed-button{    position: fixed;
+    z-index: 111111111;
+    width: 60.848px;
+    background-color: var(--design);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60.848px;
+    bottom: 79px;    border: 1px solid var(--white);
+    right: 50px;}
 
 
 
